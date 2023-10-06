@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             ButtnImage = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // ButtnImage
@@ -43,20 +44,32 @@
             ButtnImage.UseVisualStyleBackColor = true;
             ButtnImage.Click += ButtnImage_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(13, 11);
+            label1.Name = "label1";
+            label1.Size = new Size(47, 15);
+            label1.TabIndex = 1;
+            label1.Text = "Puntos:";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(ButtnImage);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button ButtnImage;
+        private Label label1;
     }
 }

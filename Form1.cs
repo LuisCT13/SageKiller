@@ -16,6 +16,7 @@ namespace SageKiller
 
         private void ButtnImage_Click(object sender, EventArgs e)
         {
+
             Random rdnx = new Random();
             Random rdny = new Random();
             int x = rdnx.Next(0, 713);
@@ -23,6 +24,10 @@ namespace SageKiller
             ButtnImage.Location = new Point(x, y);
             contador++;
             label1.Text = "Puntos: " + contador;
+            if (contador == 50)
+            {
+           
+            }
 
 
 
